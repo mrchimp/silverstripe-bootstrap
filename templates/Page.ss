@@ -23,20 +23,10 @@
 <body class="$ClassName<% if not $Menu(2) %> no-sidebar<% end_if %>">
 <div id="wrap">
   <% include Navigation %>
-  <div id="padder">
-    <div class="container">
-      <div class="row">
-        <div id="chimplogo">
-          <a href="$BaseHref">
-            <img src="$ThemeDir/images/nicelogo.png" alt="Mr Chimp">
-          </a>
-        </div>
-      </div>
-      <div class="row">
-        $Layout
-      </div>
+  <div class="container">
+    <div class="row">
+      $Layout
     </div>
-    <div id="push"></div>
   </div>
 </div>
 <% include Footer %>
