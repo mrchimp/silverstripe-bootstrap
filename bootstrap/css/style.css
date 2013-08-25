@@ -1,0 +1,226 @@
+/* Overrides go here */
+
+@import url(http://fonts.googleapis.com/css?family=Bitter:400,700,400italic);
+@import url(http://fonts.googleapis.com/css?family=Bree+Serif);
+body {
+  background-color: #f6f4ec;
+  color: #191110;
+  font-family: 'Bitter', Georgia, 'Times New Roman', serif;
+  font-size: 18px;
+}
+html, body {
+  height: 100%;
+}
+h1,h2,h3,h4,h5,h6 {
+  font-family: 'Bree Serif', Georgia, "Times New Roman", Times, serif;
+  text-shadow: 1px 1px 2px rgba(19,11,10,0.4);
+  color: #191110;
+}
+h1 {
+  margin: 10px 0 20px;
+  text-align: center;
+}
+h1 a,
+h2 a {
+  color: #191110;
+}
+h1 a:hover,
+h2 a:hover {
+  text-decoration: none;
+  color: #191110;
+}
+h2 {
+  font-size: 34px;
+}
+p {
+  margin: 0 0 20px;
+}
+li {
+  margin-bottom: 7px;
+}
+article {
+  background-color: #fffaf4;
+  margin-bottom: 60px;
+  border-top: 2px solid #fff;
+  border-bottom: 1px solid #ccc;
+  padding: 15px 30px 15px 30px;
+  border-radius: 15px;
+}
+.blog-date {
+  font-size: 14px;
+}
+.container {
+  margin-top: 30px;
+}
+.row {
+  margin-bottom: 20px;
+}
+
+/* Wrapper for page content to push down footer */
+#wrap {
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  /* Negative indent footer by it's height */
+  margin: 0 auto -200px;
+  box-shadow: inset 0 37px 150px rgba(25,17,16,0.3);
+}
+#padder {
+  padding: 0;
+}
+
+/* Set the fixed height of the footer here */
+#push {
+  height: 200px;
+}
+#footer-wrapper {
+  margin-top: 40px;
+  height: 160px;
+}
+#footer {
+  background-color: #191110;
+  color: #666;
+  height: 100%;
+  /*padding-top: 20px;
+  margin-top: 70px;*/
+}
+#footer .container {
+  padding-top: 25px;
+}
+.navbar {
+  background-color: #191110;
+  padding: 0 15px;
+  list-style-type: none;
+  height: 42px;
+}
+.navbar-inverse .nav > li > a:focus, .navbar-inverse .nav > li > a:hover {
+  color: #ff9900;
+}
+.navbar-inverse .brand, .navbar-inverse .nav > li > a {
+  color: #ddd;
+}
+#cmd_launch {
+  font-family: "courier new", monospace;
+}
+#chimplogo {
+  margin-bottom: 25px;
+  text-align: center;
+}
+#chimplogo img {
+  display: inline-block;
+}
+
+/* ========== IMAGES ========== */
+.ImageGallery .row-fluid {
+  text-align: center;
+}
+a.imggal {
+  display: inline-block;
+  margin: 9px;
+}
+.imggal img {
+  -webkit-backface-visibility: hidden;
+  box-shadow: 0px 0px 2px 1px rgba(0,0,0,0.12);
+  border-radius: 6px;
+  -webkit-transform: scale(1);
+       -o-transform: scale(1);
+          transform: scale(1);
+  -webkit-transition: -webkit-transform ease-out 1s, box-shadow ease-in 0.6s;
+       -o-transition:      -o-transform ease-out 1s, box-shadow ease-in 0.6s;
+          transition:         transform ease-out 1s, box-shadow ease-in 0.6s;
+}
+.imggal img:hover {
+  box-shadow: 0px 0px 25px 2px rgba(0,0,0,0.7);
+  -webkit-transform: scale(1.05);
+       -o-transform: scale(1.05);
+          transform: scale(1.05);
+  -webkit-transition: -webkit-transform ease-out 0.1s, box-shadow ease-in 0.1s;
+       -o-transition:      -o-transform ease-out 0.1s, box-shadow ease-in 0.1s;
+          transition:         transform ease-out 0.1s, box-shadow ease-in 0.1s;
+}
+.imggal img:active {
+  box-shadow: 0px 0px 35px 2px rgba(128,64,0,1);
+  -webkit-transform: scale(4);
+       -o-transform: scale(4);
+          transform: scale(4);
+  z-index: 999;
+  opacity: 0;
+  -webkit-transition: -webkit-transform linear 0.4s, box-shadow linear 0.4s, opacity linear 0.4s;
+       -o-transition:      -o-transform linear 0.4s, box-shadow linear 0.4s, opacity linear 0.4s;
+          transition:         transform linear 0.4s, box-shadow linear 0.4s, opacity linear 0.4s;
+}
+
+
+/* ========== MUSIC ========== */
+#progress {
+  margin-bottom: 0;
+}
+.song .play {
+  cursor: pointer;
+}
+#home-text {
+  background-color: #e6e4dc;
+}
+#song-list {
+  background-color: #f5f5f5;
+}
+#song-list td {
+  padding: 4px 10px;
+}
+#song-list .btn-group {
+  margin-right: 10px;
+}
+.slider {
+  margin: 10px;
+}
+#volume {
+  clear: both;
+}
+#stopbtn {
+  margin-right: 10px;
+}
+
+
+/* ========== CODE ========== */
+.CodeThingList article {
+  text-align: center;
+}
+.CodeThingList article h2 {
+  font-size: 48px;
+}
+.CodeThingList article p {
+  margin: 0 0 15px;
+  font-size: 18px;
+}
+.codethingslist article {
+  margin-bottom: 25px;
+}
+
+@media (max-width: 480px) {
+  body {
+    font-size: 14px;
+  }
+}
+
+@media (min-width: 980px) {
+  #padder {
+    padding: 70px 0;
+  }
+}
+
+@media (max-width: 767px) {
+  #footer {
+    margin-left: -20px;
+    margin-right: -20px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  body {
+    padding-right: 0;
+    padding-left: 0;
+  }
+  #padder {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+}
